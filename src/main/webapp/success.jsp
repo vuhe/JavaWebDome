@@ -9,11 +9,11 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>注册成功</title>
 </head>
 <body>
-user id: ${sessionScope.user.id}<br>
-user name: ${sessionScope.user.username}<br>
+注册成功<br>
+user username: ${sessionScope.user.username}<br>
 user password: ${sessionScope.user.password}<br>
 user birthday: ${sessionScope.user.birthday}<br>
 user email: ${sessionScope.user.email}<br>

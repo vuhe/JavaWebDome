@@ -6,16 +6,8 @@
         from `user`
         where username = #{username}
     </select>
-    <update id="updateUserById" parameterType="top.vuhe.User">
-        update `user`
-        set password = #{password}
-        where id = #{id}
-    </update>
     <insert id="insertUser" parameterType="top.vuhe.User">
-        insert into user (id, username, password)
-        values (#{id}, #{username}, #{password});
+        insert into user (id, username, password, birthday, email)
+        values (#{id}, #{username}, #{password}, #{birthday}, #{email});
     </insert>
-    <delete id="deleteUserById" parameterType="Integer">
-        delete from user where id = #{id}
-    </delete>
 </mapper>
